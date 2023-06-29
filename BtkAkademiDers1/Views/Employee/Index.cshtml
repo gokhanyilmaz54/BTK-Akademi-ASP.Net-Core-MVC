@@ -1,0 +1,15 @@
+﻿@model List<Employee>
+
+<div class="row">
+    <h1>Employee</h1>
+    @foreach (Employee emp in Model)
+    {
+        <div class="col-md-4">
+            <div class="card card-body">
+                <h2 class="card-header">@emp.FullName</h2>
+                <p class="card-subtitle">ID: <span>@emp.Id</span></p>
+                <p class="card-text">Age: <span>@emp.Age</span></p>
+            </div>
+        </div>
+    }
+</div>
